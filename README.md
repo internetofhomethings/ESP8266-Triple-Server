@@ -72,16 +72,16 @@ For each of the 3 servers:
 
 A JSON string will be returned with the sensor values in this format:
 
-{
-"Ain0":"316.00",
-"Ain1":"326.00",
-"Ain2":"325.00",
-"Ain3":"314.00",
-"Ain4":"316.00",
-"Ain5":"163.00",
-"Ain6":"208.00",
-"Ain7":"333.00",
-"SYS_Heap":"25408",
-"SYS_Time":"26"
-}
+{<br>
+"Ain0":"316.00",<br>
+"Ain1":"326.00",<br>
+"Ain2":"325.00",<br>
+"Ain3":"314.00",<br>
+"Ain4":"316.00",<br>
+"Ain5":"163.00",<br>
+"Ain6":"208.00",<br>
+"Ain7":"333.00",<br>
+"SYS_Heap":"25408",<br>
+"SYS_Time":"26"<br>
+}<br>
 
