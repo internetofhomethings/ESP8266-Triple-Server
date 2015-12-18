@@ -41,31 +41,31 @@ Server test:
 Note: In order to test the CoAP server, Mozilla Firefox must be installed with the 
 Copper (Cu) add-on user-agent installed.
 
-To install Copper:
-   a. Open the Mozilla Firefox browser
-   b. Enter the URL:
-      https://addons.mozilla.org/en-US/firefox/addon/copper-270430/
-   c. Click on the "Add to Firefox" button
+To install Copper:<br>
+   a. Open the Mozilla Firefox browser<br>
+   b. Enter the URL:<br>
+      https://addons.mozilla.org/en-US/firefox/addon/copper-270430/<br>
+   c. Click on the "Add to Firefox" button<br>
 
 Here is the test...
 
 First, compile and load the sketch to the ESP8266. With the sketch running, follow
 the following 3 server-specific steps:
 
-1. http server:
-   a. Open the html file mqtt_server.html in a web browser
-   b. Click the "Request via HTTP" button
+1. http server:<br>
+   a. Open the html file mqtt_server.html in a web browser<br>
+   b. Click the "Request via HTTP" button<br>
 
-2. mqtt server:
-   a. pen the html file mqtt_server.html in a web browser
-   b. Click the "Request via MQTT" button
+2. mqtt server:<br>
+   a. pen the html file mqtt_server.html in a web browser<br>
+   b. Click the "Request via MQTT" button<br>
 
-3. coap server:
-   a. open the Mozilla Firefox web browser and enter the URL:
-      coap://192.168.0.132:5683
-   b. Click the "Discover" button
-   c. Click the "request" service (left part of web browser window)
-   d. Enter "/?request=GetSensors" in the Outgoing Payload tab (center of web browser window)
+3. coap server:<br>
+   a. open the Mozilla Firefox web browser and enter the URL:<br>
+      coap://192.168.0.132:5683<br>
+   b. Click the "Discover" button<br>
+   c. Click the "request" service (left part of web browser window)<br>
+   d. Enter "/?request=GetSensors" in the Outgoing Payload tab (center of web browser window)<br>
    e. Click the "Put" button
 
 For each of the 3 servers:
