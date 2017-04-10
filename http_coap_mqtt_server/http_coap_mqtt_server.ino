@@ -28,7 +28,8 @@ extern "C" {                      //SDK functions for Arduino IDE access
 #include "espconn.h"
 #include "eagle_soc.h"
 #include <pgmspace.h>
-void * pvPortZalloc(int size);
+//void * pvPortZalloc(int size);
+void * pvPortZalloc(int size,char*,int);
 }
 
 /********************************************************
@@ -94,6 +95,11 @@ void ReadSensors(int interval);
 void BlinkCallback(int *pArg);
 void ProcessCOAPMsg(void);
 void udp_send(const uint8_t *buf, int buflen);
+
+extern "C"{
+    void ProcessCoAPrequest(char * rqst,char * replystring);
+    void blinkLed(int nblink);
+}
 
 /********************************************************
  * Instantiate class objects
@@ -192,6 +198,7 @@ extern "C"{
         Server_ProcessRequest(SVR_COAP, rqst, replystring); 
     }
 }
+
 
 /********************************************************
  * Initiates LED blink count-down
